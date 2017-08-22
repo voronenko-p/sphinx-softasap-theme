@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  {% include "head.html" %}
+</head>
+
+<body data-spy="scroll" data-target="#navigation" data-offset="120">
+
+    <!-- *** NAVBAR *** -->
+    {% include "navbar.html" %}
+    <!-- /#navbar -->
+
+    <!-- *** NAVBAR END *** -->
+
+
+    <div id="all">
+
+        {% block body %}{% endblock %}
+        {% include "footer_parralax.html" %}
+    </div>
+    <!-- /#all -->
+    {% include "footer_scripts.html" %}
+
+
+</body>
+
+</html>
